@@ -31,7 +31,7 @@
 	<br>|__|__|<em>__</em>comment-model.js.map
 	<br>|__|__|<em>__</em>post-model.js
 	<br>|__|__|<em>__</em>post-model.js.map
-	<br>|__|__r<strong>routes</strong>
+	<br>|__|__<strong>routes</strong>
 	<br>|__|__|<em>__</em><strong>graphql</strong>
 	<br>|__|__|<em>__</em>|<em>__</em>mutations
 	<br>|__|__|<em>__</em>|<em>__</em>|__comment-mutation.js
