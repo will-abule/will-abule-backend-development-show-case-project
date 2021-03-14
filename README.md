@@ -1,6 +1,6 @@
 <h1>Basic Example</h1>
 
-<p>Hi, My name is Will Abule, I&rsquo;m a Full-Stack web developer with over 6 years of professional software development experience. I primarily code using JavaScript, TypeScript, or Python. However, I have a history with Kotlin, C#, and Java. I make client-side applications using Angular, Vue, React and React Native with its ecosystem of friends. Node Js, and Express framework for backend/server-side RestFul and Graphql APIS applications and MongoDB, MySQL, or Firebase as Database. And recently took interest in graph databases using DGraph and gRPC for APIs communication. This project is to showcase my ability with backend development. This API application is built with Node JS and Typescript and consists of tests code, rest, GraphQl, and MongoDB database.</p>
+<p>Hi, My name is Will Abule, I&rsquo;m a Full-Stack web developer with over 6 years of professional software development experience. I primarily code using JavaScript, TypeScript, or Python. However, I have a history with Kotlin, C#, and Java. I make client-side applications using Angular, Vue, React and React Native with its ecosystem of friends. Node Js, and Express framework for backend/server-side RestFul and Graphql APIS applications and MongoDB, MySQL, or Firebase as Database. And recently took interest in graph databases using DGraph and gRPC for APIs communication. This project is to showcase my ability with backend development. This API application consists of tests code, rest, GraphQl, and MongoDB database.</p>
 
 <h2>Requirements</h2>
 
@@ -18,103 +18,122 @@
 
 <h3>Folder Structure</h3>
 
-<p><strong>__</strong>config
-	<br>|<strong>__</strong>|__<strong><strong>custom-environment-variables.json<br>|__</strong></strong>|__<strong><strong>default.json<br>|__</strong></strong>|__<strong><strong>production.json<br>|__</strong></strong>|__<strong><strong>test.json<br>|__</strong></strong>dist
-	<br>|<strong>__</strong>|__<strong><strong>middleware<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>error-middleware.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>error-middleware.js.map
-	<br>|<strong>__</strong>|__<strong><strong>models<br>|____</strong></strong>|<strong><strong>|<em>__</em></strong></strong>comment-model.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>comment-model.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>post-model.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>post-model.js.map
-	<br>|<strong>__</strong>|__<strong><strong>routes<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>graphql
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>mutations
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-mutation.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-mutation.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>query
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-query.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-query.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>schema
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>index.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>index.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>type-definitions
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-type-definitions.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-type-definitions.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>rest
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>post-route.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>post-route.js.map
-	<br>|<strong>__</strong>|<strong><strong>startup<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>config.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>config.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>db.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>db.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>init.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>init.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>logger.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>logger.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>route.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>route.js.map
-	<br>|<strong>__</strong>|__<strong><strong>test<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>post-rest-api-route.test.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>post-rest-api-route.test.js.map
-	<br>|<strong>__</strong>|<strong><strong>utils<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>functions
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>empty-object-function.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>empty-object-function.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>query-validator-function.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>query-validator-function.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>select-functions-function.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>select-functions-function.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>interfaces
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>comment-interface.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>comment-interface.js.map
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>post-interface.js
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>post-interface.js.map
-	<br>|<strong>__</strong>|__<strong><strong>postman-collection-export<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>Will Abule Showcase.postman_collection.json
-	<br>|<strong>__</strong>index.js
-	<br>|<strong>__</strong>index.js.map
-	<br>|<strong>__</strong>src
-	<br>|<strong>__</strong>|<strong><strong>middleware<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>error-middleware.ts
-	<br>|<strong>__</strong>|<strong><strong>models<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>comment-model.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>post-model.ts
-	<br>|<strong>__</strong>|__<strong><strong>routes<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>graphql
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>mutations
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-mutation.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>query
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-query.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>schema
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>index.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>type-definitions
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>|<strong><strong>__</strong></strong>comment-type-definitions.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>rest
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong><em>__</em></strong>post-route.ts
-	<br>|<strong>__</strong>|<strong><strong>startup<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>config.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>db.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>init.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>logger.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>route.ts
-	<br>|<strong>__</strong>|<strong><strong>test<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>post-rest-api-route.test.ts
-	<br>|<strong>__</strong>|__<strong><strong>utils<br>|__</strong></strong>|__<strong><strong>|<em>__</em></strong></strong>functions
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>empty-object-function.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>query-validator-function.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>select-functions-function.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>interfaces
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>comment-interface.ts
-	<br>|<strong>__</strong>|__<strong><strong>|<em>__</em></strong></strong>|<strong>__</strong>post-interface.ts
-	<br>|<strong>__</strong>index.ts
-	<br>|<strong>__</strong>package-lock.json
-	<br>|<strong>__</strong>package.json
-	<br>|<strong>__</strong>README.md
-	<br>|<strong>__</strong>tsconfig.json</p>
+<p>__<strong>config</strong>
+	<br>|__|__custom-environment-variables.json
+	<br>|__|__default.json
+	<br>|__|__production.json
+	<br>|__|__test.json<strong><br></strong>|__<strong>dist</strong>
+	<br>|__|__<strong>middleware</strong>
+	<br>|__|__|<em>__</em>error-middleware.js
+	<br>|__|__|<em>__</em>error-middleware.js.map
+	<br>|__|__<strong>models</strong>
+	<br>|__|__|<em>__</em>comment-model.js
+	<br>|__|__|<em>__</em>comment-model.js.map
+	<br>|__|__|<em>__</em>post-model.js
+	<br>|__|__|<em>__</em>post-model.js.map
+	<br>|__|__r<strong>outes</strong>
+	<br>|__|__|<em>__</em><strong>graphql</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>mutations
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-mutation.js
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-mutation.js.map
+	<br>|__|__|<em>__</em>|<em>__</em><strong>query</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-query.js
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-query.js.map
+	<br>|__|__|<em>__</em>|<em>__</em><strong>schema</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>|__index.js
+	<br>|__|__|<em>__</em>|<em>__</em>|__index.js.map
+	<br>|__|__|<em>__</em>|<em>__</em><strong>type-definitions</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-type-definitions.js
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-type-definitions.js.map
+	<br>|__|__|<em>__</em><strong>rest</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>post-route.js
+	<br>|__|__|<em>__</em>|<em>__</em>post-route.js.map
+	<br>|__|__<strong>startup</strong>
+	<br>|__|__|<em>__</em>config.js
+	<br>|__|__|<em>__</em>config.js.map
+	<br>|__|__|<em>__</em>db.js
+	<br>|__|__|<em>__</em>db.js.map
+	<br>|__|__|<em>__</em>init.js
+	<br>|__|__|<em>__</em>init.js.map
+	<br>|__|__|<em>__</em>logger.js
+	<br>|__|__|<em>__</em>logger.js.map
+	<br>|__|__|<em>__</em>route.js
+	<br>|__|__|<em>__</em>route.js.map
+	<br>|__|__<strong>test</strong>
+	<br>|__|__|<em>__</em>post-rest-api-route.test.js
+	<br>|__|__|<em>__</em>post-rest-api-route.test.js.map
+	<br>|__|__<strong>utils</strong>
+	<br>|__|__|<em>__</em><strong>functions</strong>
+	<br>|__|__|<em>__</em>|__empty-object-function.js
+	<br>|__|__|<em>__</em>|__empty-object-function.js.map
+	<br>|__|__|<em>__</em>|__query-validator-function.js
+	<br>|__|__|<em>__</em>|__query-validator-function.js.map
+	<br>|__|__|<em>__</em>|__select-functions-function.js
+	<br>|__|__|<em>__</em>|__select-functions-function.js.map
+	<br>|__|__|<em>__</em><strong>interfaces</strong>
+	<br>|__|__|<em>__</em>|__comment-interface.js
+	<br>|__|__|<em>__</em>|__comment-interface.js.map
+	<br>|__|__|<em>__</em>|__post-interface.js
+	<br>|__|__|<em>__</em>|__post-interface.js.map
+	<br>|__|__<strong>postman-collection-export</strong>
+	<br>|__|__|<em>__</em>Will Abule Showcase.postman_collection.json
+	<br>|__index.js
+	<br>|__index.js.map
+	<br>|__<strong>src</strong>
+	<br>|__|__<strong>middleware</strong>
+	<br>|__|__|<em>__</em>error-middleware.ts
+	<br>|__|__<strong>models</strong>
+	<br>|__|__|<em>__</em>comment-model.ts
+	<br>|__|__|<em>__</em>post-model.ts
+	<br>|__|__<strong>routes</strong>
+	<br>|__|__|<em>__</em><strong>graphql</strong>
+	<br>|__|__|<em>__</em>|<em>__</em><strong>mutations</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-mutation.ts
+	<br>|__|__|<em>__</em>|<em>__</em><strong>query</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-query.ts
+	<br>|__|__|<em>__</em>|<em>__</em><strong>schema</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>|__index.ts
+	<br>|__|__|<em>__</em>|<em>__</em><strong>type-definitions</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>|__comment-type-definitions.ts
+	<br>|__|__|<em>__</em><strong>rest</strong>
+	<br>|__|__|<em>__</em>|<em>__</em>post-route.ts
+	<br>|__|__<strong>startup</strong>
+	<br>|__|__|<em>__</em>config.ts
+	<br>|__|__|<em>__</em>db.ts
+	<br>|__|__|<em>__</em>init.ts
+	<br>|__|__|<em>__</em>logger.ts
+	<br>|__|__|<em>__</em>route.ts
+	<br>|__|__<strong>test</strong>
+	<br>|__|__|<em>__</em>post-rest-api-route.test.ts
+	<br>|__|__<strong>utils</strong>
+	<br>|__|__|<em>__</em><strong>functions</strong>
+	<br>|__|__|<em>__</em>|__empty-object-function.ts
+	<br>|__|__|<em>__</em>|__query-validator-function.ts
+	<br>|__|__|<em>__</em>|__select-functions-function.ts
+	<br>|__|__|<em>__</em><strong>interfaces</strong>
+	<br>|__|__|<em>__</em>|__comment-interface.ts
+	<br>|__|__|<em>__</em>|__post-interface.ts
+	<br>|__index.ts
+	<br>|__package-lock.json
+	<br>|__package.json
+	<br>|__README.md
+	<br>|__tsconfig.json</p>
 
 <h4>Runing App</h4>
 
 <p><code>npm stsrt</code></p>
 
-<h4>Runing REST</h4>
+<h4>Runing TEST</h4>
 
 <p><code>npm run test</code></p>
 
 <h4>Testing REST APIs</h4>
 
-<h5>&quot;GET api/posts &quot; : - All post, (with filter)</h5><pre>
-<code>{</code>
+<p>
+	<br>
+</p>
+
+<h5>&quot;GET api/posts &quot; : - All post, (with filter)</h5><pre><code>{</code>
 <code>   &quot;url&quot;: &quot;http://localhost:50011/api/post/&quot;,</code>
 <code>   &quot;method&quot;: &quot;GET&quot;,</code>
 <code>   &quot;params&quot;: {</code>
@@ -136,8 +155,7 @@
   },
 </code></pre>
 
-<h5>&quot;GET api/posts&quot; : - All post (without filter)</h5><pre>
-<code>{</code>
+<h5>&quot;GET api/posts&quot; : - All post (without filter)</h5><pre><code>{</code>
 <code>    &quot;url&quot;: &quot;http://localhost:50011/api/post/&quot;,
     &quot;method&quot;: &quot;GET&quot;,
     &quot;params&quot;: {
@@ -187,11 +205,11 @@
 }
 </code></pre>
 
-<h4>Testing REST APIs</h4>
+<h4>Testing GraphQL APIs</h4>
 
-<p><a href="http://localhost:50011/graphql">Go to</a>.</p>
+<p><a href="http://localhost:50011/graphql" rel="noopener noreferrer" target="_blank">Go to http://localhost:50011/graphql</a>.</p>
 
-<h5>To add</h5><pre><code>mutation {
+<h5>To TEST Mutations</h5><pre><code>mutation {
   createComment(
             postId: &quot;604d0d0e8ec8f083549c7d03&quot;,
             comment: &quot;qwerty dolor sit amet.&quot;
@@ -203,7 +221,7 @@
 }
 </code></pre>
 
-<h5>To get (without filter)</h5><pre><code>{
+<h5>To TEST Query (without filter)</h5><pre><code>{
   getComments(
             query: {
                      filter: false, 
@@ -219,7 +237,7 @@
 }
 </code></pre>
 
-<h5>To get (with filter)</h5><pre><code>{
+<h5>To TEST Query (with filter)</h5><pre><code>{
   getComments(
             query: {
                         filter: false, 
