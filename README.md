@@ -1,14 +1,13 @@
 # Basic Example
-
 Hi, My name is Will Abule, I’m a Full-Stack web developer with over 6 years of professional software development experience. I primarily code using JavaScript, TypeScript, or Python. However, I have a history with Kotlin, C#, and Java. I make client-side applications using Angular, Vue, React and React Native with its ecosystem of friends. Node Js, and Express framework for backend/server-side RestFul and Graphql APIS applications and MongoDB, MySQL, or Firebase as Database. And recently took interest in graph databases using DGraph and gRPC for APIs communication. This project is to show case my ability with backend development. This api application consist of test, rest, graphql and mongodb database.
 
-## Rquirements
 
+## Rquirements
 You need the following installed in your meachine to run this project.
 
-- [Node](https://nodejs.org/)
-- [MongoDb](https://docs.mongodb.com/manual/installation/)
-- [Typescript](https://www.npmjs.com/package/typescript) Installed globally in your computer.
+* [Node](https://nodejs.org/)
+* [MongoDb](https://docs.mongodb.com/manual/installation/)
+* [Typescript](https://www.npmjs.com/package/typescript) Installed globally in your computer.
 
 you can install typescript globally using the following command.
 
@@ -16,120 +15,119 @@ you can install typescript globally using the following command.
 
 ### Folder Structure
 
-**\_\_**config
-|**\_\_**|\_**\_custom-environment-variables.json
-|\_\_\_\_**|\_**\_default.json
-|\_\_\_\_**|\_**\_production.json
-|\_\_\_\_**|\_**\_test.json
-|\_\_\_\_**dist
-|**\_\_**|\_**\_middleware
-|\_\_\_\_**|\_**\_|**\_\_\***\*error-middleware.js
-|**\_\_**|\_**\_|**\_\_\*\***error-middleware.js.map
-|**\_\_**|\_**\_models
-|\_\_\_\_**|\_**\_|**\_\_\***\*comment-model.js
-|**\_\_**|\_**\_|**\_\_\*\***comment-model.js.map
-|**\_\_**|\_**\_|**\_\_\***\*post-model.js
-|**\_\_**|\_**\_|**\_\_\*\***post-model.js.map
-|**\_\_**|\_**\_routes
-|\_\_\_\_**|\_**\_|**\_\_\***\*graphql
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**mutations
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**|\*\***\_\_\***\*comment-mutation.js
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**|\***\*\_\_\*\***comment-mutation.js.map
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**query
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**|\***\*\_\_\*\***comment-query.js
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**|\*\***\_\_\***\*comment-query.js.map
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**schema
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**|\*\***\_\_\***\*index.js
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**|\***\*\_\_\*\***index.js.map
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**type-definitions
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**|\***\*\_\_\*\***comment-type-definitions.js
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**|\*\***\_\_\***\*comment-type-definitions.js.map
-|**\_\_**|\_**\_|**\_\_\*\***rest
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**post-route.js
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**post-route.js.map
-|**\_\_**|\_**\_startup
-|\_\_\_\_**|\_**\_|**\_\_\***\*config.js
-|**\_\_**|\_**\_|**\_\_\*\***config.js.map
-|**\_\_**|\_**\_|**\_\_\***\*db.js
-|**\_\_**|\_**\_|**\_\_\*\***db.js.map
-|**\_\_**|\_**\_|**\_\_\***\*init.js
-|**\_\_**|\_**\_|**\_\_\*\***init.js.map
-|**\_\_**|\_**\_|**\_\_\***\*logger.js
-|**\_\_**|\_**\_|**\_\_\*\***logger.js.map
-|**\_\_**|\_**\_|**\_\_\***\*route.js
-|**\_\_**|\_**\_|**\_\_\*\***route.js.map
-|**\_\_**|\_**\_test
-|\_\_\_\_**|\_**\_|**\_\_\***\*post-rest-api-route.test.js
-|**\_\_**|\_**\_|**\_\_\*\***post-rest-api-route.test.js.map
-|**\_\_**|\_**\_utils
-|\_\_\_\_**|\_**\_|**\_\_\***\*functions
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_**empty-object-function.js
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_**empty-object-function.js.map
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_**query-validator-function.js
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_**query-validator-function.js.map
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_**select-functions-function.js
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_**select-functions-function.js.map
-|**\_\_**|\_**\_|**\_\_\*\***interfaces
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_**comment-interface.js
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_**comment-interface.js.map
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_**post-interface.js
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_**post-interface.js.map
-|**\_\_**|\_**\_postman-collection-export
-|\_\_\_\_**|\_**\_|**\_\_\***\*Will Abule Showcase.postman_collection.json
-|**\_\_**index.js
-|**\_\_**index.js.map
-|**\_\_**src
-|**\_\_**|\_**\_middleware
-|\_\_\_\_**|\_**\_|**\_\_\*\***error-middleware.ts
-|**\_\_**|\_**\_models
-|\_\_\_\_**|\_**\_|**\_\_\***\*comment-model.ts
-|**\_\_**|\_**\_|**\_\_\*\***post-model.ts
-|**\_\_**|\_**\_routes
-|\_\_\_\_**|\_**\_|**\_\_\***\*graphql
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**mutations
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**|\*\***\_\_\***\*comment-mutation.ts
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**query
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**|\*\***\_\_\***\*comment-query.ts
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**schema
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**|\*\***\_\_\***\*index.ts
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_\_\_**type-definitions
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**|\*\***\_\_\***\*comment-type-definitions.ts
-|**\_\_**|\_**\_|**\_\_\*\***rest
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_\_\_**post-route.ts
-|**\_\_**|\_**\_startup
-|\_\_\_\_**|\_**\_|**\_\_\*\***config.ts
-|**\_\_**|\_**\_|**\_\_\***\*db.ts
-|**\_\_**|\_**\_|**\_\_\*\***init.ts
-|**\_\_**|\_**\_|**\_\_\***\*logger.ts
-|**\_\_**|\_**\_|**\_\_\*\***route.ts
-|**\_\_**|\_**\_test
-|\_\_\_\_**|\_**\_|**\_\_\***\*post-rest-api-route.test.ts
-|**\_\_**|\_**\_utils
-|\_\_\_\_**|\_**\_|**\_\_\*\***functions
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_**empty-object-function.ts
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_**query-validator-function.ts
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_**select-functions-function.ts
-|**\_\_**|\_**\_|**\_\_\*\***interfaces
-|**\_\_**|\_**\_|**\_\_\***\*|**\_\_**comment-interface.ts
-|**\_\_**|\_**\_|**\_\_\*\***|**\_\_**post-interface.ts
-|**\_\_**index.ts
-|**\_\_**package-lock.json
-|**\_\_**package.json
-|**\_\_**README.md
-|**\_\_**tsconfig.json
+______config
+|______|____custom-environment-variables.json
+|______|____default.json
+|______|____production.json
+|______|____test.json
+|______dist
+|______|____middleware
+|______|____|________error-middleware.js
+|______|____|________error-middleware.js.map
+|______|____models
+|______|____|________comment-model.js
+|______|____|________comment-model.js.map
+|______|____|________post-model.js
+|______|____|________post-model.js.map
+|______|____routes
+|______|____|________graphql
+|______|____|________|________mutations
+|______|____|________|________|__________comment-mutation.js
+|______|____|________|________|__________comment-mutation.js.map
+|______|____|________|________query
+|______|____|________|________|__________comment-query.js
+|______|____|________|________|__________comment-query.js.map
+|______|____|________|________schema
+|______|____|________|________|__________index.js
+|______|____|________|________|__________index.js.map
+|______|____|________|________type-definitions
+|______|____|________|________|__________comment-type-definitions.js
+|______|____|________|________|__________comment-type-definitions.js.map
+|______|____|________rest
+|______|____|________|________post-route.js
+|______|____|________|________post-route.js.map
+|______|____startup
+|______|____|________config.js
+|______|____|________config.js.map
+|______|____|________db.js
+|______|____|________db.js.map
+|______|____|________init.js
+|______|____|________init.js.map
+|______|____|________logger.js
+|______|____|________logger.js.map
+|______|____|________route.js
+|______|____|________route.js.map
+|______|____test
+|______|____|________post-rest-api-route.test.js
+|______|____|________post-rest-api-route.test.js.map
+|______|____utils
+|______|____|________functions
+|______|____|________|______empty-object-function.js
+|______|____|________|______empty-object-function.js.map
+|______|____|________|______query-validator-function.js
+|______|____|________|______query-validator-function.js.map
+|______|____|________|______select-functions-function.js
+|______|____|________|______select-functions-function.js.map
+|______|____|________interfaces
+|______|____|________|______comment-interface.js
+|______|____|________|______comment-interface.js.map
+|______|____|________|______post-interface.js
+|______|____|________|______post-interface.js.map
+|______|____postman-collection-export
+|______|____|________Will Abule Showcase.postman_collection.json
+|______index.js
+|______index.js.map
+|______src
+|______|____middleware
+|______|____|________error-middleware.ts
+|______|____models
+|______|____|________comment-model.ts
+|______|____|________post-model.ts
+|______|____routes
+|______|____|________graphql
+|______|____|________|________mutations
+|______|____|________|________|__________comment-mutation.ts
+|______|____|________|________query
+|______|____|________|________|__________comment-query.ts
+|______|____|________|________schema
+|______|____|________|________|__________index.ts
+|______|____|________|________type-definitions
+|______|____|________|________|__________comment-type-definitions.ts
+|______|____|________rest
+|______|____|________|________post-route.ts
+|______|____startup
+|______|____|________config.ts
+|______|____|________db.ts
+|______|____|________init.ts
+|______|____|________logger.ts
+|______|____|________route.ts
+|______|____test
+|______|____|________post-rest-api-route.test.ts
+|______|____utils
+|______|____|________functions
+|______|____|________|______empty-object-function.ts
+|______|____|________|______query-validator-function.ts
+|______|____|________|______select-functions-function.ts
+|______|____|________interfaces
+|______|____|________|______comment-interface.ts
+|______|____|________|______post-interface.ts
+|______index.ts
+|______package-lock.json
+|______package.json
+|______README.md
+|______tsconfig.json
 
 #### Runing App
 
 `npm stsrt`
 
-#### Runing REST
+#### Runing REST 
 
 `npm run test`
 
 #### Testing REST APIs
 
 ##### "GET api/posts " : - All post, (with filter)
-
 ```
 		{
 			"url": "http://localhost:50011/api/post/",
@@ -152,9 +150,7 @@ you can install typescript globally using the following command.
 					},
 		},
 ```
-
 ##### "GET api/posts" : - All post (without filter)
-
 ```
 		{
 			"url": "http://localhost:50011/api/post/",
@@ -169,7 +165,7 @@ you can install typescript globally using the following command.
 		},
 ```
 
-##### "GET api/posts/:id" : - Single post
+##### "GET api/posts/:id" : - Single post 
 
 ```
 {
@@ -220,7 +216,8 @@ you can install typescript globally using the following command.
 
 [Go to](http://localhost:50011/graphql).
 
-##### To add
+
+##### To add 
 
 ```
 mutation {
@@ -235,16 +232,16 @@ mutation {
 }
 ```
 
-##### To get (witouth filter)
+##### To get (witouth filter) 
 
 ```
 {
   getComments(
 			query: {
-						filter: false,
-						sort: "asc",
+						filter: false, 
+						sort: "asc", 
 						sortName: "createdAt",
-						pageSize: 10,
+						pageSize: 10, 
 						pageNumber: 1
 			}
 		) {
@@ -255,16 +252,16 @@ mutation {
 
 ```
 
-##### To get (with filter)
+##### To get (with filter) 
 
 ```
 {
   getComments(
 			query: {
-						filter: false,
-						sort: "asc",
+						filter: false, 
+						sort: "asc", 
 						sortName: "createdAt",
-						pageSize: 10,
+						pageSize: 10, 
 						pageNumber: 1,
 						searchFilters: "{"searchOption":"OR","rules":[{"field":"content","option":"cn","type":"string","data":"example"}]}"
 			}
@@ -277,3 +274,6 @@ mutation {
 ```
 
 ## Done! 🤓
+
+
+                                    
