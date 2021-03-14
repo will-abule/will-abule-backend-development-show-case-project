@@ -1,0 +1,4 @@
+{
+  "db": "db",
+  "env": "NODE_ENV"
+}

@@ -1,0 +1,191 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Will Abule Showcase",
+		"_postman_id": "03f3ef67-0627-2a4f-0b16-df17f1f79074",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:50011/api/post/?filter=false&pageSize=10&pageNumber=1&sort=asc&sortName=title",
+			"request": {
+				"url": {
+					"raw": "http://localhost:50011/api/post/?filter=false&pageSize=10&pageNumber=1&sort=asc&sortName=title",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50011",
+					"path": [
+						"api",
+						"post",
+						""
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sort",
+							"value": "asc",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortName",
+							"value": "title",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50011/api/post/?filter=true&pageSize=10&pageNumber=1&sort=asc&sortName=title&searchFilters={\"searchOption\":\"AND\",\"rules\":[{\"field\":\"content\",\"option\":\"cn\",\"type\":\"string\",\"data\":\"example\"}]}",
+			"request": {
+				"url": {
+					"raw": "http://localhost:50011/api/post/?filter=true&pageSize=10&pageNumber=1&sort=asc&sortName=title&searchFilters={\"searchOption\":\"AND\",\"rules\":[{\"field\":\"content\",\"option\":\"cn\",\"type\":\"string\",\"data\":\"example\"}]}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50011",
+					"path": [
+						"api",
+						"post",
+						""
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sort",
+							"value": "asc",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortName",
+							"value": "title",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "searchFilters",
+							"value": "{\"searchOption\":\"AND\",\"rules\":[{\"field\":\"content\",\"option\":\"cn\",\"type\":\"string\",\"data\":\"example\"}]}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50011/api/post/604d0d0e8ec8f083549c7d03",
+			"request": {
+				"url": "http://localhost:50011/api/post/604d0d0e8ec8f083549c7d03",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50011/api/post/add",
+			"request": {
+				"url": "http://localhost:50011/api/post/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Example Title\",\n\t\"content\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\",\n\t\"meta\":{\n\t\t\"author\": \"Will Abule\",\n\t\t\"authorProfilePicture\": \"https://lh3.googleusercontent.com/ogw/ADGmqu91E9OHpXVoUIy7ASGCCjl3T6CkOj02NXFupAW2Fg=s64-c-mo\"\n\t},\n\t\"images\": [{\n\t\t\"url\": \"https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png\",\n\t\t\"cover\": true\n\t},{\n\t\t\"url\": \"https://lh3.googleusercontent.com/ogw/ADGmqu91E9OHpXVoUIy7ASGCCjl3T6CkOj02NXFupAW2Fg=s64-c-mo\",\n\t\t\"cover\": false\n\t},{\n\t\t\"url\": \"https://www.maketecheasier.com/assets/uploads/2017/09/Dummy-Text-Random-Example.jpg\",\n\t\t\"cover\": false\n\t}]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50011/api/post/update/604d0d0e8ec8f083549c7d03",
+			"request": {
+				"url": "http://localhost:50011/api/post/update/604d0d0e8ec8f083549c7d03",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\": \"Example Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50011/api/post/delete/604d0ded8ec8f083549c7d13",
+			"request": {
+				"url": "http://localhost:50011/api/post/delete/604d0ded8ec8f083549c7d13",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

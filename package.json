@@ -1,0 +1,51 @@
+{
+  "name": "will-abule-backend-development-show-case-project",
+  "version": "1.0.0",
+  "description": "Hi, My name is Will Abule, I’m a Full-Stack web developer with over 6 years of professional software development experience. I primarily code using JavaScript, TypeScript, or Python. However, I have a history with Kotlin, C#, and Java. I make client-side applications using Angular, Vue, React and React Native with its ecosystem of friends. Node Js, and Express framework for backend/server-side RestFul and Graphql APIS applications and MongoDB, MySQL, or Firebase as Database. And recently took interest in graph databases using DGraph and gRPC for APIs communication. This project is to show case my ability with backend development. This api application consist of test, rest, graphql and mongodb database.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "tsc && set NODE_ENV=test && jest --env=node --no-cache -i --detectOpenHandles --coverage --forceExit ./dist/test",
+    "start": "tsc && node --max-http-header-size 50000 dist/index.js"
+  },
+  "keywords": [
+    "Will Abule",
+    "showcase"
+  ],
+  "engines": {
+    "node": "15.x",
+    "npm": "7.x"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Will Abule",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "helmet": "^4.4.1",
+    "joi": "^17.4.0",
+    "joi-objectid": "^3.0.1",
+    "mongodb-collection-query-with-mongoose": "^2.0.17",
+    "mongoose": "^5.12.0",
+    "socket.io": "^4.0.0",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.0",
+    "@types/config": "^0.0.38",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.34",
+    "@types/socket.io": "^2.1.13",
+    "@types/supertest": "^2.0.10",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}
