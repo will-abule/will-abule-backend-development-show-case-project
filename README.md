@@ -1,6 +1,6 @@
 <h1>Basic Example</h1>
 
-<p>Hi, My name is Will Abule, I&rsquo;m a Full-Stack web developer with over 6 years of professional software development experience. I primarily code using JavaScript, TypeScript, or Python. However, I have a history with Kotlin, C#, and Java. I make client-side applications using Angular, Vue, React and React Native with its ecosystem of friends. Node Js, and Express framework for backend/server-side RestFul and Graphql APIS applications and MongoDB, MySQL, or Firebase as Database. And recently took interest in graph databases using DGraph and gRPC for APIs communication. This project is to showcase my ability with backend development. This API application consists of tests code, rest, GraphQl, and MongoDB database.</p>
+<p>Hi, My name is Will Abule, I&rsquo;m a Full-Stack web developer with over 6 years of professional software development experience. I primarily code using JavaScript, TypeScript, or Python. However, I have a history with Kotlin, C#, and Java. I make client-side applications using Angular, Vue, React and React Native with its ecosystem of friends. Node Js, and Express framework for backend/server-side RestFul and Graphql APIS applications and MongoDB, MySQL, or Firebase as Database. And recently took interest in graph databases using DGraph and gRPC for APIs communication. This project is to showcase my ability with backend development. This API application is built with Node JS and Typescript and consists of tests code, rest, GraphQl, and MongoDB database.</p>
 
 <h2>Requirements</h2>
 
