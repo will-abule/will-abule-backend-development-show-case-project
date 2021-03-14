@@ -31,7 +31,7 @@
 	<br>|__|__|<em>__</em>comment-model.js.map
 	<br>|__|__|<em>__</em>post-model.js
 	<br>|__|__|<em>__</em>post-model.js.map
-	<br>|__|__r<strong>outes</strong>
+	<br>|__|__r<strong>routes</strong>
 	<br>|__|__|<em>__</em><strong>graphql</strong>
 	<br>|__|__|<em>__</em>|<em>__</em>mutations
 	<br>|__|__|<em>__</em>|<em>__</em>|__comment-mutation.js
@@ -119,11 +119,11 @@
 	<br>|__README.md
 	<br>|__tsconfig.json</p>
 
-<h4>Runing App</h4>
+<h4>Running App</h4>
 
-<p><code>npm stsrt</code></p>
+<p><code>npm start</code></p>
 
-<h4>Runing TEST</h4>
+<h4>Running TEST</h4>
 
 <p><code>npm run test</code></p>
 
@@ -137,7 +137,7 @@
 <code>   &quot;url&quot;: &quot;http://localhost:50011/api/post/&quot;,</code>
 <code>   &quot;method&quot;: &quot;GET&quot;,</code>
 <code>   &quot;params&quot;: {</code>
-<code>      &quot;filtet&quot;: true,</code>
+<code>      &quot;filter&quot;: true,</code>
 <code>      &quot;pageSize&quot;: 10,</code>
 <code>      &quot;pageNumber&quot;:  1,</code>
 <code>      &quot;sort&quot;: &quot;asc&quot;,</code>
