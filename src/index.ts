@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 initConfig();
-(async () => mongoDBConnect.connect(app))();
+(async () => await mongoDBConnect.connect(app))();
 
 export const port = process.env.PORT || 50011;
 

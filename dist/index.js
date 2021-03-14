@@ -20,7 +20,7 @@ const db_1 = require("./startup/db");
 const app = express_1.default();
 app.use(express_1.default.json());
 config_1.initConfig();
-(() => __awaiter(void 0, void 0, void 0, function* () { return db_1.mongoDBConnect.connect(app); }))();
+(() => __awaiter(void 0, void 0, void 0, function* () { return yield db_1.mongoDBConnect.connect(app); }))();
 exports.port = process.env.PORT || 50011;
 exports.server = app.listen(exports.port, () => console.info(`listening on port ${exports.port}`));
 //# sourceMappingURL=index.js.map
